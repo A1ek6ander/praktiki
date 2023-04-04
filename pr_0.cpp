@@ -75,11 +75,11 @@ void Draw(struct Record* records) {
 	cout.fill(' '); cout.width(width);  cout << left << "|Âåäîìîñòü îáùåñòâåííîãî òðàíñïîðòà"; cout << "|" << endl;
 	cout.width(width); cout.fill('-');cout << "+"; cout << "+" << endl;
 	cout.fill(' ');
-	cout << left << "| Âèä òðàíñïîðòà ";
-	cout << left << "| ìàðøðóòà";
-	cout << left << "| Ïðîòÿæåííîñòü ìàðøðóòà (êì)";
-	cout << left << "| Âðåìÿ â äîðîãå (ìèí)";
-	cout << left << " |     Äàòà     |" << endl;
+	cout << left << "| Вид транспорта ";
+	cout << left << "| маршрута";
+	cout << left << "| Протяженность маршрута (км)";
+	cout << left << "| Время в дороге (мин)";
+	cout << left << " |     Дата     |" << endl;
 	cout.width(width); cout.fill('-');cout << "+"; cout << "+" << endl;
 	cout.fill(' ');
 	for (int i = 0; i < 3; i++) {
@@ -94,7 +94,7 @@ void Draw(struct Record* records) {
 		cout << "|" << endl;
 	}
 	cout.width(width); cout.fill('-'); cout << "+"; cout << "+" << endl;
-	cout.fill(' '); cout.width(width);  cout << left << "|Ïðèìå÷àíèå: Òð - òðàìâàé, Òñ - òðîëëåéáóñ, À - àâòîáóñ"; cout << "|" << endl;
+	cout.fill(' '); cout.width(width);  cout << left << "|Примечание: Тр - трамвай, Тс - троллейбус, А - автобус"; cout << "|" << endl;
 	cout.width(width); cout.fill('-');cout << "+"; cout << "+" << endl;
 	cout << endl;
 	cout << endl;
@@ -108,9 +108,9 @@ int main()
 
 	struct Record records[10];
 
-	records[0] = { "Òð.", "12 ", 27.550, "75 ", {03,04,2022} };
-	records[1] = { "Ò-ñ", "17 ", 13.600, "57 ", {03,04,2020} };
-	records[2] = { "À", "12à",  57.300, "117", {04,03,2022} };
+	records[0] = { "Тр.", "12 ", 27.550, "75 ", {03,04,2022} };
+	records[1] = { "Т-с", "17 ", 13.600, "57 ", {03,04,2020} };
+	records[2] = { "А", "12à",  57.300, "117", {04,03,2022} };
 
 	Draw(records);
 }
