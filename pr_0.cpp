@@ -72,7 +72,7 @@ void Draw(struct Record* records) {
 	cout << endl;
 	cout << endl;
 	cout << "+";cout.width(width); cout.fill('-'); cout << "+" << endl;
-	cout.fill(' '); cout.width(width);  cout << left << "|Âåäîìîñòü îáùåñòâåííîãî òðàíñïîðòà"; cout << "|" << endl;
+	cout.fill(' '); cout.width(width);  cout << left << "|Ведомость общественного транспорта"; cout << "|" << endl;
 	cout.width(width); cout.fill('-');cout << "+"; cout << "+" << endl;
 	cout.fill(' ');
 	cout << left << "| Вид транспорта ";
